@@ -1,0 +1,71 @@
+//main: ../styles.less
+
+.rewiews {
+    padding: 4.6rem 0;
+    position: relative;
+
+    background: #332f30
+    url("../assets/img/bg.png") center no-repeat;
+}
+
+
+.rewiews__item {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+.rewiews__text {
+    font-size: 14px;
+    color: white;
+    line-height: 2.2;
+
+}
+
+.rewiews__author {
+    width: 100%;
+    margin-top: -51px;
+
+
+    position: absolute;
+    top:100%;
+
+    left: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+.author__name {
+    padding: 5px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: @black;
+    
+}
+
+.author__company {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: fade(@gray,50%);
+    font-style: italic;
+}
+
+.rewiews__photo {
+    border: solid 4px #fff;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 103px;
+    height: 103px;
+}
+
+.rewiews__icon {
+    width: 13px;
+    height: 13px;
+
+
+    &--unactive {
+        opacity: 50%
+    }
+}

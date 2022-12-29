@@ -1,0 +1,72 @@
+//main: ../styles.less
+
+.about {
+    margin: 4.4rem 0;
+
+}
+.about__inner {
+    display: flex;
+    max-width: 1090px;
+}
+
+.about__photo,
+.about__content {
+    margin-top: 2rem;
+    width: 50%;
+    padding-left: 3.2rem;
+}
+
+.about_subtitle {
+    padding-bottom: 10px;
+    font-size: 45px;
+    color: @black;
+    text-transform: uppercase
+    ;
+}
+.about__title {
+    position:relative;
+    left: -10px;
+    font-size: 92px;
+    color: fade(@gray,20%);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+.about__text {
+    padding-top: 10px;
+
+    line-height: 1.2rem;
+    padding-bottom: 58px;
+    font-size: 12px;
+    color: fade(@gray,70%);
+}
+
+p {
+    padding: 5px;
+}
+
+.about__photo {
+    position: relative;
+    // background: 
+    // url("../assets/img/bg.jpg") left bottom no-repeat;4
+
+
+    img {
+        position: relative;
+        z-index: 2;
+    }
+
+    &:before {
+        content: "";
+        width: 500px;
+        height: 500px;
+        background-color: #EFEFEF;
+
+        position: absolute;
+        left: 1rem;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+
